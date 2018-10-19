@@ -15,3 +15,8 @@ def counts(request):
 		dict_words[word] = dict_words.get(word,0) + 1
 	words_list = sorted(dict_words.items(), key=operator.itemgetter(1), reverse=True)
 	return render(request, 'counts.html',{'words_list':words_list, 'words_len':len(each_words), 'original':main_words})
+
+
+def about(request):
+
+	return render(request,'about.html', )
