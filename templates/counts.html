@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>no of counts</title>
+</head>
+<body>
+	<h2>No of the words in the sentence are {{ words_len  }} </h2>
+	<h3>Your original sentence</h3>
+	<p>{{ original }}</p>
+<h3>words by catogery</h3>
+{% for k,v in words_list %}
+<p>{{ k }} -- {{ v }}</p>
+<!-- <br> -->
+{% endfor %}
+</body>
+</html>
